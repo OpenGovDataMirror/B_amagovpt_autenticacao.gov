@@ -1,0 +1,35 @@
+#!/bin/sh
+ln -s -f /usr/local/lib/libpteidcommon.so.2.0.0 /usr/local/lib/libpteidcommon.so
+ln -s -f /usr/local/lib/libpteidcommon.so.2.0.0 /usr/local/lib/libpteidcommon.so.2
+ln -s -f /usr/local/lib/libpteidcommon.so.2.0.0 /usr/local/lib/libpteidcommon.so.2.0
+ln -s -f /usr/local/lib/libpteiddialogsQT.so.2.0.0 /usr/local/lib/libpteiddialogsQT.so
+ln -s -f /usr/local/lib/libpteiddialogsQT.so.2.0.0 /usr/local/lib/libpteiddialogsQT.so.2
+ln -s -f /usr/local/lib/libpteiddialogsQT.so.2.0.0 /usr/local/lib/libpteiddialogsQT.so.2.0
+ln -s -f /usr/local/lib/libpteidcardlayer.so.2.0.0 /usr/local/lib/libpteidcardlayer.so
+ln -s -f /usr/local/lib/libpteidcardlayer.so.2.0.0 /usr/local/lib/libpteidcardlayer.so.2
+ln -s -f /usr/local/lib/libpteidcardlayer.so.2.0.0 /usr/local/lib/libpteidcardlayer.so.2.0
+ln -s -f /usr/local/lib/libpteidpkcs11.so.2.0.0 /usr/local/lib/libpteidpkcs11.so
+ln -s -f /usr/local/lib/libpteidpkcs11.so.2.0.0 /usr/local/lib/libpteidpkcs11.so.2
+ln -s -f /usr/local/lib/libpteidpkcs11.so.2.0.0 /usr/local/lib/libpteidpkcs11.so.2.0
+ln -s -f /usr/local/lib/libpteidapplayer.so.2.0.0 /usr/local/lib/libpteidapplayer.so
+ln -s -f /usr/local/lib/libpteidapplayer.so.2.0.0 /usr/local/lib/libpteidapplayer.so.2
+ln -s -f /usr/local/lib/libpteidapplayer.so.2.0.0 /usr/local/lib/libpteidapplayer.so.2.0
+ln -s -f /usr/local/lib/libpteidlib.so.2.0.0 /usr/local/lib/libpteidlib.so
+ln -s -f /usr/local/lib/libpteidlib.so.2.0.0 /usr/local/lib/libpteidlib.so.2
+ln -s -f /usr/local/lib/libpteidlib.so.2.0.0 /usr/local/lib/libpteidlib.so.2.0
+
+/sbin/ldconfig
+
+if [ -x /etc/init.d/pcscd ]
+then
+	invoke-rc.d pcscd restart 3> /dev/null
+fi
+
+if [ -x /etc/init.d/udev ]
+then
+	invoke-rc.d udev reload 3> /dev/null
+fi
+
+
+exit 0
+

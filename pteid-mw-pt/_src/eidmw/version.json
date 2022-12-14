@@ -1,0 +1,274 @@
+{
+    "distributions": {
+        "ubuntu18": {
+            "latestVersion": "3.1.1",
+            "package": "20126/78595/Autenticacao.gov_Ubuntu_18_x64.deb",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/Autenticacao.gov_Ubuntu_18_x64.deb"
+        },
+        "ubuntu19": {
+            "latestVersion": "3.1.0",
+            "package": "20126/78595/Autenticacao.gov_Ubuntu_19_x64.deb",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/Autenticacao.gov_Ubuntu_19_x64.deb"
+        },
+        "ubuntu20": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_Ubuntu_20_x64.deb",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/pteid-mw_ubuntu20_amd64.deb"
+        },
+        "ubuntu21": {
+            "latestVersion": "3.7.0",
+            "package": "20126/78595/Autenticacao.gov_Ubuntu_21_x64.deb",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/pteid-mw_ubuntu21_amd64.deb"
+        },
+        "ubuntu22": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_Ubuntu_22_x64.deb",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/pteid-mw_ubuntu22_amd64.deb"
+        },
+        "windows32": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_Win_x86.msi",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/Autenticacao.gov_Win_x86_signed.msi"
+        },
+        "windows64": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_Win_x64.msi",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/Autenticacao.gov_Win_x64_signed.msi"
+        },
+        "fedora32": {
+            "latestVersion": "0.0.0",
+            "package": "",
+            "packageUrl": ""
+        },
+        "fedora64": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_Fedora_x64.rpm",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/pteid-mw-fedora34.x86_64.rpm"
+        },
+        "suse32": {
+            "latestVersion": "0.0.0",
+            "package": "",
+            "packageUrl": ""
+        },
+        "suse64": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_OpenSUSE_x64.rpm",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/pteid-mw-opensuse15.3.x86_64.rpm"
+        },
+        "osx": {
+            "latestVersion": "3.8.0",
+            "package": "20126/78595/Autenticacao.gov_MacOS.pkg",
+            "packageUrl": "https://aplicacoes.autenticacao.gov.pt/apps/Autenticacao.gov_MacOS.pkg"
+        }
+    },
+    "versions": [
+        {
+            "version": "3.8.0",
+            "date": "2022-06-21",
+            "release_notes": [
+				"Suporte no SDK para assinatura com Chave Móvel Digital",
+                "Assinatura XAdES: possibilidade de assinar com Chave Móvel Digital",
+				"Assinatura XAdES: possibilidade de adicionar uma assinatura a um package ASIC já assinado",
+				"Escolha obrigatória do utilizador sobre Cache de dados do Cartão no primeiro arranque da aplicação",
+                "Novo menu para validar estado dos certificados",
+                "Nova área de notificações",
+                "Correções na assinatura de documentos PDF e pré-visualização do selo de assinatura",
+                "[MacOS] Módulo CryptoTokenkit para assinatura e autenticação com Cartão de Cidadão em aplicações nativas MacOS"
+            ]
+        },
+        {
+            "version": "3.7.0",
+            "date": "2021-12-14",
+            "release_notes": [
+                "Suporte no SDK para assinaturas com todos os algoritmos suportados pelo Cartão",
+                "Correção no carregamento de atributos SCAP com CMD e CC",
+                "Correção na verificação de PIN, para pedir sempre o PIN se for necessário",
+                "Correções no tratamentos e propagação de exceções no SDK",
+                "Melhorias nas mensagens da janela da confirmação de morada e respectivas mensagens de erro",
+                "Forçar auto update dos certificados",
+                "Mostrar sempre notícias pelo menos uma vez",
+                "Melhorias no selo de assinatura: Possibilidade de ajustar tamanho e selecionar campos visíveis"
+            ]
+        },
+	    {
+            "version": "3.6.1",
+            "date": "2021-07-05",
+            "release_notes": [
+                "[Windows] Correção no instalador para restaurar as operações em aplicações Windows/CryptoAPI. Issues GH-79 e GH-80",
+                "Melhorias de interface no modo de diagnóstico"
+            ]
+        },
+        {
+            "version": "3.6.0",
+            "date": "2021-05-27",
+            "release_notes": [
+                "Correções nas assinaturas com Atributos Profissionais",
+                "Melhoria na qualidade de imagem customizada - assinatura PDF",
+                "Correções nas assinaturas de PDF em lote",
+                "[Windows] Melhoria no instalador para permitir a instalação para processadores ARM",
+                "[Windows] Melhorias no registo de certificados do Cartão de Cidadão"
+            ]
+        },
+        {
+            "version": "3.5.0",
+            "date": "2021-03-31",
+            "release_notes": [
+                "Nova página de assinatura unificada",
+                "Nova funcionalidade para geração de relatório de diagnóstico",
+                "Suporte a cartões expirados extendido até 31 de Dezembro de 2021",
+                "Correções nas assinaturas com Atributos Profissionais",
+                "Melhorias na detecção de ficheiros PDF não suportados"
+            ]
+        },
+        {
+            "version": "3.4.0",
+            "date": "2021-01-13",
+            "release_notes": [
+                "Adicionar suporte para assinatura PDF com LTV (Validação em longo prazo)",
+                "[Windows] Registo do Certificado ECRaizEstado 002 via menu configurações",
+                "[Windows] Facilitar mudar de configuração gráfica, disponibilizando atalhos na pasta da aplicação para o efeito",
+                "[MacOS] Correção nas assinaturas com Chave Móvel Digital e SCAP para MacOS Sierra e High Sierra"
+            ]
+        },
+        {
+            "version": "3.3.1",
+            "date": "2020-10-30",
+            "release_notes": [
+                "Auto-update dos certificados root CA confiáveis",
+                "Update licença EUPL para versão 1.2",
+                "Suporte para cumprir a legislação em vigor em que os documentos expirados depois de 24 de fevereiro de 2020 são válidos até 31 de março de 2021",
+                "[MacOS]: Não deixar instalar em versões anteriores ao MacOS 10.12"
+            ]
+        },
+        {
+            "version": "3.3.0",
+            "date": "2020-09-24",
+            "release_notes": [
+                "Auto-update dos certificados root",
+                "Melhorar mensagens sobre erros de comunicação",
+				"[MacOS] Correção na assinatura de documentos PDF - preview de documentos com fonts de sistema",
+                "Auto-update verifica se o instalador está assinado",
+                "Assinatura SCAP com possibilidade de adicionar selo temporal",
+                "Assinatura simples com opção para usar selo de assinatura com tamanho reduzido",
+                "Interface de linha de comandos, para assinatura de ficheiros"
+            ]
+        },
+        {
+            "version": "3.2.0",
+            "date": "2020-06-25",
+            "release_notes": [
+                "Atualização de componentes técnicos da aplicação entre os quais QT e OpenSSL",
+                "Redesenho de interface nas janelas de introdução de PIN do CC",
+                "Assinatura com Chave Móvel - possibilidade de forçar o re-envio de OTP por SMS",
+                "Validações extra na janela de confirmação de morada",
+                "Opção adicional na configuração de renderização gráfica - Software OpenGL ou Direct3D"
+            ]
+        },
+        {
+            "version": "3.1.2",
+            "date": "2020-06-01",
+            "release_notes": [
+                "Atualização de certificados"
+            ]
+        },
+        {
+            "version": "3.1.1",
+            "date": "2020-05-20",
+            "release_notes": [
+                "Correcção no instalador para MacOS",
+                "Correcção na alteração de morada em Ubuntu 20.04"
+            ]
+        },
+        {
+            "version": "3.1.0",
+            "date": "2020-03-10",
+            "release_notes": [
+                "Assinatura Chave Móvel Digital em aplicações Windows via Crypto API (Adobe Reader, MS Office e outras aplicações terceiras)",
+                "Actualização de certificados da PKI do CC através da própria aplicação",
+                "Nova janela popup para divulgação de notícias de interesse geral no arranque da aplicação",
+                "Suporte a ecrãs de High DPI - a aplicação respeita as configurações de scaling do Windows ou as configurações manuais escolhidas pelo utilizador no menu definições",
+                "Adicionada uma opção de registo (Windows) para fazer cache ao PIN de autenticação de formar a repor o funcionamento das versões anteriores",
+                "Possibilidade de exportar certificados do cidadão para ficheiro e visualizar com o Viewer nativo do Windows no menu Certificados"
+            ]
+        },
+        {
+            "version": "3.0.21",
+            "date": "2019-11-21",
+            "release_notes": [
+                "Correcção do carregamento da pteidlib no SDK Java e C#. Issue GH-2",
+                "Notas do Cartão: Adicionado popup para avisar que as notas não foram gravadas no cartão se o Cidadão tentar sair do menu sem gravar",
+                "Na alteração de morada foi adicionada mensagem de erro a indicar que o pedido está expirado se for o caso",
+                "Auto-Updates: As actualizações automáticas passaram a ser efetuadas exclusivamente via portal autenticacão.gov.pt"
+            ]
+        },
+        {
+            "version": "3.0.20",
+            "date": "2019-10-01",
+            "release_notes": [
+                "Correção na funcionalidade de confirmação de morada",
+                "Atributo data/hora do computador na assinatura PDF passa a incluir indicação do fuso horário",
+                "Correção na assinatura CMD - suporte melhorado para nomes de ficheiros com caracteres UTF-8"
+            ]
+        },
+        {
+            "version": "3.0.19",
+            "date": "2019-08-26",
+            "release_notes": [
+                "Acessibilidade na aplicação Autenticação.gov",
+                "Possibilidade de obter atributos SCAP usando Chave Móvel",
+                "Nova funcionalidade: exportar foto em formato PNG ou JPEG"
+            ]
+        },
+        {
+            "version": "3.0.18",
+            "date": "2019-06-04",
+            "release_notes": [
+                "Correção na leitura de certificados e verificação do estado do cartão em Windows",
+                "Nova funcionalidade - Assinatura CMD de múltiplos ficheiros em lote"
+            ]
+        },
+        {
+            "version": "3.0.17",
+            "date": "2019-04-12",
+            "release_notes": [
+                "Correção na funcionalidade de assinatura de PDF com Cartão de Cidadão",
+                "Configuração do Microsoft Outlook integrada na aplicação",
+                "Suporte a servidor de proxy na assinatura SCAP",
+                "Possibilidade de selecionar a pasta de instalação do Software"
+            ]
+        },
+        {
+            "version": "3.0.16",
+            "date": "2019-01-29",
+            "release_notes": [
+                "Melhorias na funcionalidade de assinatura SCAP",
+                "Suporte a cartões com chaves RSA de 3072 bits"
+            ]
+        },
+        {
+            "version": "3.0.15",
+            "date": "2018-09-07",
+            "release_notes": [
+                "Correcção na assinatura de PDF",
+                "Correcções de interface gráfico na assinatura CMD"
+            ]
+        },
+        {
+            "version": "3.0.13",
+            "date": "2018-06-26",
+            "release_notes": [
+                "Correcção na funcionalidade de alteração de morada",
+                "Correcções nas funcionalidades de assinatura SCAP e com Chave Móvel"
+            ]
+        },
+        {
+            "version": "3.0.10",
+            "date": "2018-04-02",
+            "release_notes": [
+                "Novo interface gráfico",
+                "Assinatura com Cartão de Cidadão e Chave Móvel integradas numa só aplicação",
+                "Assinatura SCAP com Cartão de Cidadão e Chave Móvel"
+            ]
+        }
+    ]
+}
